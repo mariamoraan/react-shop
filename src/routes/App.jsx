@@ -15,7 +15,7 @@ const App = () => {
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/login" component={Login}/>
                     <Route exact path="/recovery-password" component={RecoveryPassword}/>
-                    <Route component={NotFound} />
+                    <Route path="*" component={NotFound} />
                 </Layout>
             </Switch>
         </BrowserRouter>
